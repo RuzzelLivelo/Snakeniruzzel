@@ -54,7 +54,7 @@ function changeDirection(event) {
 }
 
 function setDirection(x, y) {
-    if (direction.x !== -x && direction.y !== -y) {
+    if ((direction.x === 0 && x !== 0) || (direction.y === 0 && y !== 0)) {
         direction = { x, y };
     }
 }
